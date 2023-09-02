@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Background Example</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script>
+      let posx = Math.random(1e10);
+      let posy = Math.random(1e10);
+      let variation = 0;
+      let maxRectSize;
+      let minRectSize;
+      const stackDepth = 9;
+
+      setup = () => {
+        p5.disableFriendlyErrors = true;
+        createCanvas(windowWidth, windowHeight);
+        maxRectSize = max(width, height);
+        minRectSize = maxRectSize / (2 ** stackDepth);
+        rectMode(CENTER);
+        stroke("black");
+        noFill();
+      };
+
+      draw = () => {
+        background("white");
+        variation += 0.003;
+        quadTree(width / 2, height / 2, maxRectSize);
+      };
+
+      mouseDragged = () => {
+        posx += pmouseX - mouseX;
+        posy += pmouseY - mouseY;
+      };
+
+      quadTree = (x, y, size) => {
+        if (size < minRectSize) return;
+        const n = noise((x + posx) * 0.001, (y + posy) * 0.001, variation);
+        if (abs(n - 0.45) > size / maxRectSize) {
+          rect(x, y, size);
+        } else {
+          size /= 2;
+          const d = size / 2;
+          quadTree(x + d, y + d, size);
+          quadTree(x + d, y - d, size);
+          quadTree(x - d, y + d, size);
+          quadTree(x - d, y - d, size);
+        }
+      };
+    </script>
+  </body>
+</html>
