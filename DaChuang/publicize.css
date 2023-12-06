@@ -1,4 +1,79 @@
+  /* 手机屏幕样式 */
+  @media only screen and (max-width: 600px) {
+    @font-face {  
+      font-family: "Antonio";  
+      src: url("Fonts/Antonio.otf") format("opentype");  
+      font-family: "ZenDots";  
+      src: url("Fonts/ZenDots.ttf") format("truetype");  
+  }
   
+  #upper {
+      width: 100%;
+      height: 60px;
+  }
+  
+  #lower {
+      background-image: url(image/back.gif);
+      background-repeat: no-repeat;
+      background-size: 80% 90%;
+      background-position: 200px 30px;
+      height: 800px;
+      width: 100%;
+  }
+  
+  #right-block {
+      float: none; /* Remove the float on small screens */
+      width: 100%; /* Occupy full width on small screens */
+  }
+  
+  #element1, #element2, #element3 {
+      width: 100%; /* Occupy full width on small screens */
+      right: 0;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  #role24, #tool {
+      width: 100%; /* Occupy full width on small screens */
+      right: 0;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  #image-container {  
+      float: none; /* Remove the float on small screens */
+      width: 100%; /* Occupy full width on small screens */
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  #down {
+      width: 100%; /* Occupy full width on small screens */
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  #text {
+      font-size: 20px; /* Adjust font size for small screens */
+      line-height: 40px; /* Adjust line height for small screens */
+  }
+  
+  a {
+      font-size: 20px; /* Adjust font size for small screens */
+  }
+  
+  
+   }
+
+
+
+
+  /* 电脑样式 */
+  @media screen and (min-width: 1200px) { 
 @font-face {  
     font-family: "Antonio";  
     src: url("Fonts/Antonio.otf") format("opentype");  
@@ -208,4 +283,4 @@
       text-align: center;
       font-size: 30px;
   }
-  
+  }
