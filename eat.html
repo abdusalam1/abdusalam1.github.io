@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagonal Grid with Color, Random Movement, Size Variation, and Dark Background</title>
+    <style>body {background-color: #111; margin: 0;}</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <script>
+    let hexSize = 30;
+    let cols = 8;
+    let rows = 8;
+    let hexagons = [];
+
+    function setup() {
+        createCanvas(windowWidth * 0.9, windowHeight * 0.9);
+        createHexGrid();
+    }
+
+    function createHexGrid() {
+        for (let col = 0; col < cols; col++) {
+            for (let row = 0; row < rows; row++) {
+                let x = random(width);
+                let y = random(height);
+                let col1 = color(random(255), random(255), random(255));
+                let col2 = color(random(255), random(255), random(255));
+                let speedX = random(-1, 1);
+                let speedY = random(-1, 1);
+                let rotationSpeed = random(-0.05, 0.05);
+                let sizeVariation = random(0.5, 1.5);
+                hexagons.push({x: x, y: y, size: hexSize * sizeVariation, col1: col1, col2: col2, speedX: speedX, speedY: speedY, rotationSpeed: rotationSpeed});
+            }
+        }
+    }
+
+    function draw() {
+        background(17); // 淡黑色背景
+        moveHexGrid(); // 移动六边形网格
+        drawHexGrid(); // 重新绘制六边形网格
+    }
+
+    function moveHexGrid() {
+        for (let i = 0; i < hexagons.length; i++) {
+            hexagons[i].x += hexagons[i].speedX;
+            hexagons[i].y += hexagons[i].speedY;
+            hexagons[i].x = constrain(hexagons[i].x, 0, width);
+            hexagons[i].y = constrain(hexagons[i].y, 0, height);
+        }
+    }
+
+    function drawHexGrid() {
+        for (let i = 0; i < hexagons.length; i++) {
+            let hex = hexagons[i];
+            drawHex(hex.x, hex.y, hex.size, hex.col1, hex.col2);
+        }
+    }
+
+    function drawHex(x, y, size, col1, col2) {
+        beginShape();
+        for (let i = 0; i < 6; i++) {
+            let angle = TWO_PI / 6 * i;
+            let px = x + cos(angle) * size;
+            let py = y + sin(angle) * size;
+            vertex(px, py);
+        }
+        endShape(CLOSE);
+        fill(col1);
+        stroke(col2);
+    }
+    </script>
+</body>
+</html>

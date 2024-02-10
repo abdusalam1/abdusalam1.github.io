@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagonal Grid with Color, Movement, and Random Rotation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <script>
+    let hexSize = 30;
+    let hexagons = [];
+
+    function setup() {
+        createCanvas(windowWidth, windowHeight);
+        createHexGrid();
+    }
+
+    function createHexGrid() {
+        let cols = floor(windowWidth / (hexSize * 1.5));
+        let rows = floor(windowHeight / (hexSize * sqrt(3)));
+        let offsetX = (windowWidth - cols * hexSize * 1.5) / 2;
+        let offsetY = (windowHeight - rows * hexSize * sqrt(3)) / 2;
+        
+        for (let col = 0; col < cols; col++) {
+            for (let row = 0; row < rows; row++) {
+                let x = col * 1.5 * hexSize + offsetX;
+                let y = row * 2 * hexSize * sqrt(3) / 2 + (col % 2) * hexSize * sqrt(3) / 2 + offsetY;
+                let col1 = color(random(255), random(255), random(255));
+                let col2 = color(random(255), random(255), random(255));
+                let rotationSpeed = random(-0.05, 0.05);
+                let sizeVariation = random(0.5, 1.5);
+                hexagons.push({x: x, y: y, size: hexSize * sizeVariation, col1: col1, col2: col2, rotationSpeed: rotationSpeed});
+            }
+        }
+    }
+
+    function draw() {
+        background(255); // 清除画布
+        moveHexGrid(); // 移动六边形网格
+        drawHexGrid(); // 重新绘制六边形网格
+    }
+
+    function moveHexGrid() {
+        for (let i = 0; i < hexagons.length; i++) {
+            hexagons[i].x += random(-1, 1);
+            hexagons[i].y += random(-1, 1);
+            hexagons[i].size += random(-1, 1);
+            hexagons[i].x = constrain(hexagons[i].x, 0, windowWidth);
+            hexagons[i].y = constrain(hexagons[i].y, 0, windowHeight);
+        }
+    }
+
+    function drawHexGrid() {
+        for (let i = 0; i < hexagons.length; i++) {
+            let hex = hexagons[i];
+            drawHex(hex.x, hex.y, hex.size, hex.col1, hex.col2);
+        }
+    }
+
+    function drawHex(x, y, size, col1, col2) {
+        beginShape();
+        for (let i = 0; i < 6; i++) {
+            let angle = TWO_PI / 6 * i;
+            let px = x + cos(angle) * size;
+            let py = y + sin(angle) * size;
+            vertex(px, py);
+        }
+        endShape(CLOSE);
+        fill(col1);
+        stroke(col2);
+    }
+    </script>
+</body>
+</html>
