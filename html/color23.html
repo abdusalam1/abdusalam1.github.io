@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>color23</title>
+<link rel="icon" type="image/x-icon" href="image/logo.png">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+  }
+  #video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('video24/24色/图层\ 24.png') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+
+#others {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo2 img {
+  width: 7vw;
+}
+
+
+#p1,
+#name {
+  letter-spacing: 2px;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0; /* 清除段落标签的默认外边距 */
+}
+#name{
+    position: relative;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+p{
+  font-size: 18px;
+    margin:0;
+    margin-top: 5px;
+    color: #000;
+}
+
+@font-face {  
+    font-family: "Antonio";  
+    src: url("Fonts/Antonio.otf") format("opentype");  
+    font-family: "ZenDots";  
+    src: url("Fonts/ZenDots.ttf") format("truetype"); 
+    font-family: "ArchivoBlack";  
+    src: url("Fonts/ArchivoBlack.ttf") format("truetype"); 
+  }
+
+img{
+  animation: fadeIn 4s;
+}
+
+#p1,
+#name {
+  font-size: 25px;
+  font-family: 'ArchivoBlack';
+  color: transparent; /* 将文字颜色设为透明，使其不可见 */
+  background: url('video24/111.jpg') no-repeat;
+  -webkit-background-clip: text; /* 使用文字作为背景图像的剪裁区域 */
+  animation: pulse 10s infinite; /* 添加闪烁动画 */
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* 添加文字闪烁动画 */
+@keyframes pulse {
+  0% {
+    background-position: 0 0; /* 背景图像初始位置 */
+  }
+  25% {
+    background-position: 100% 0; /* 背景图像向右移动 */
+  }
+  50% {
+    background-position: 100% 100%; /* 背景图像向下移动 */
+  }
+  75% {
+    background-position: 0 100%; /* 背景图像向左移动 */
+  }
+  100% {
+    background-position: 0 0; /* 回到初始位置 */
+  }
+}
+p {
+    animation: fadeIn 4s; /* 使用fadeIn动画，持续2秒 */
+}
+</style>
+</head>
+<body>
+
+<video id="video-background" autoplay loop muted>
+  <source src="video24/23.mp4" type="video/mp4">
+
+</video>
+
+<!-- 其他页面内容 -->
+<div id="others">
+  <div id="logo2">
+    <img src="images/logo.png" alt="Logo">
+    <div id="p1">color beyond</div>
+    <div id="name">艳蓝色</div>
+    <p>艳蓝色，如同大自然的一份礼物，慷慨地将它的美丽赠予大地，也让人们在人生的旅途中领略它的美
+        丽和意义。
+        </p>
+    <p>让我们沉浸在艳蓝色的世界之中，</p>
+    <p> 感受它带来的自信和勇气，</p>
+
+    <p>让它点亮我们心灵中的希
+        望和梦想，
+       </p>
+       <p> 成就我们更美好的未来和远方！</p>
+        
+         
+  </div>
+</div>
+
+</body>
+</html>
