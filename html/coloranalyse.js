@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.clear();
     }
 
-    function uploadFile() {
+    function uploadFilechanged() {
 
         const input = document.getElementById('uploadInput');
         const file = input.files[0];
@@ -179,8 +179,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Error:', error);  
             }  
         });  
+        
         return false; // 阻止按钮默认行为
     }
+
+function uploadFile() {  
+    const input = document.getElementById('uploadInput');  
+    const file = input.files[0];  
+  
+    const formData = new FormData();  
+    formData.append('file', file);  
+  
+    // 使用 fetch 替代 $.ajax  
+    fetch('http://127.0.0.1:5000/analyse', {  
+        method: 'POST', // 发送 POST 请求  
+        body: formData // 发送 FormData 对象  
+    })  
+    .then(response => {  
+        // 检查响应是否成功  
+        if (!response.ok) {  
+            throw new Error('Network response was not ok.');  
+        }  
+        // 解析 JSON 响应体  
+        return response.json();  
+    })  
+    .then(data => {  
+        // 将颜色信息保存到本地存储  
+        localStorage.setItem('colors', JSON.stringify(data.colors));  
+        console.log('success');  
+    })  
+    .catch(error => {  
+        console.error('Error:', error);  
+    });  
+  
+    // 阻止按钮默认行为  
+    return false;  
+}
 
 
     function downloadFile() {
