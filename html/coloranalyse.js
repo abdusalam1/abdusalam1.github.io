@@ -191,7 +191,7 @@ function uploadFile() {
     formData.append('file', file);  
   
     // 使用 fetch 替代 $.ajax  
-    fetch('http://15703249.r18.cpolar.top/', {  
+    fetch('http://15703249.r18.cpolar.top/analyse', {  
         method: 'POST', // 发送 POST 请求  
         body: formData // 发送 FormData 对象  
     })  
