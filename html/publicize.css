@@ -1,0 +1,251 @@
+
+@font-face {  
+    font-family: "Antonio";  
+    src: url("Fonts/Antonio.otf") format("opentype");  
+    font-family: "ZenDots";  
+    src: url("Fonts/ZenDots.ttf") format("truetype");  
+  }
+  
+  #upper{
+      width: 100%;
+      height: 50px;
+      align-items: center;
+      display: flex;
+      position: absolute;
+  }
+  #logo1{
+ left: 2%;
+   width: 3.8%;
+   height: 60%; 
+  position: absolute;
+  top: 25%;
+  }
+  #logo2{
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    left: 6%;
+    top: 35%;
+  
+  }
+  #lower{
+    height: 800px;;
+    width: 100%;
+  }
+  #right-block{
+  /* display: inline-block; */
+  float: right;
+  width: 50%;
+  height: 100%;
+  }
+  #element1{
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 126px;
+  height: 15px;
+  right: 30px;
+  top: 150px;
+  
+  background: #CAFF01;
+  box-shadow: 0px 0px 0px #CAFF01;
+  border-radius: 5px;
+  }
+  
+  .element-text1{
+  width: 150px;
+  height: 31px;
+  
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+  
+  }
+  #element2{
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 220px;
+  height: 15px;
+  right: 30px;
+  top: 195px;
+  
+  background: #CAFF01;
+  box-shadow: 0px 0px 0px #CAFF01;
+  border-radius: 5px;
+  }
+  
+  .element-text2{
+  width: 220px;
+  height: 31px;
+  
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+  }
+  
+  #element3{
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 180px;
+  height: 15px;
+  right: 30px;
+  top: 240px;
+  
+  background: #CAFF01;
+  box-shadow: 0px 0px 0px #CAFF01;
+  border-radius: 5px;
+  }
+  
+  .element-text3{
+  width: 180px;
+  height: 31px;
+  
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+  }
+  
+  #role24{
+  /* 24 role images */
+  
+  position: absolute;
+  width: 298px;
+  height: 38px;
+  right: 50px;
+  top: 650px;
+  
+  font-family:"ZenDots",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  
+  color: rgba(255, 255, 255, 0.32);
+  
+  }
+  #tool{
+   /* 浪漫的色彩工具 */
+  
+  position: absolute;
+  width: 350px;
+  height: 45px;
+  right: 0px;
+  top: 675px;
+  font-family: 'Zen Loop';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45px;
+  /* identical to box height */
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  
+  }
+
+  #image-container {  
+  position: absolute;
+  float: left;
+  width: 50%;
+  top: 35%;
+  left: 30px;
+  height: 60%;
+  }
+  #color1{
+    position: relative;
+    width: 80%;
+    height: 15%;
+  }
+  #color2{
+    position: relative;
+    width: 78%;
+    height: 18%;
+    left: 22%;
+    top: 30px;
+  }
+  #addtext{
+    position: relative;
+    width: 47px;
+    height: 78px;
+    left: 63%;
+    top: -25px;
+    font-family: 'ZenDots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 154px;
+    color: #FFFFFF;
+
+  }
+
+
+
+  #down{
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  left: 70px;
+  top: 370px;
+  background: #CAFF01;
+  border-radius: 30px;
+  }
+  
+  #text{
+  width: 150px;
+  height: 60px;
+  font-family: 'Inknut Antiqua';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 60px;
+  /* identical to box height */
+  color: #000000;
+  }
+  
+  
+  a{
+      text-decoration: none;
+      color: rgb(9, 8, 8);
+      text-align: center;
+      font-size: 30px;
+  }
+

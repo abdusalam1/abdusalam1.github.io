@@ -1,0 +1,1648 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+
+:root {
+  --gradient-colors: #93E52A,#1610CD,#E30C21;
+  --gradient-angle: to right ;
+}
+body {
+    margin: 0;
+    font-family: 'Anybody', sans-serif;
+}
+@font-face {  
+  font-family: "ZenDots";  
+  src: url("Fonts/ZenDots.ttf") format("truetype");  
+}  
+
+@font-face {  
+  font-family: "Antonio";  
+  src: url("Fonts/Antonio.otf") format("opentype");  
+}  
+
+@font-face {  
+  font-family: "ArchivoBlack";  
+  src: url("Fonts/ArchivoBlack.ttf") format("truetype");  
+}
+@font-face {  
+  font-family: "Montserrat";  
+  src: url("Fonts/Montserrat.ttf") format("truetype");  
+}
+  .page {
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .page::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .page-content {
+    height: 200vh; /* 设置页面高度，根据实际需求调整 */
+    scroll-snap-align: start;
+  }
+  
+  
+
+
+.sord {
+    position: fixed;
+    display: flex;
+    width: 65%;
+    height: 68%;
+    top: 7%;
+    left: -1.5%;
+    transform: scale(0.88);
+}
+.sord img{
+  /* object-fit: cover; */
+    position: relative;
+    width: 100%;
+    height: 110%;
+}
+#right_bot{
+  position: fixed;
+  display: flex;
+  
+  width: 20%;
+  height: 10%;
+  top: 81.5%;
+  right: 1.5%;
+  transform: scale(0.88);
+  flex-direction: column;
+}
+
+#role24{
+  /* 24 role images */
+
+  font-family:'ZenDots';
+  font-style: normal;
+  font-weight: 510;
+  font-size: 32px;
+  line-height: 30px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.32);
+  margin-left: auto;
+  }
+  #tool{
+   /* 浪漫的色彩工具 */
+  
+  /* width: 350px;
+  height: 45px; */
+margin-top: 0; 
+  font-family: 'Zen Loop';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45px;
+  /* identical to box height */
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  margin-left: auto;
+  
+  }
+
+  /* <div id="left_bot">
+  <p id="romance">24 role images</p>
+  <p id="tool2">浪漫的色彩工具</p>
+</div> */
+#left_bot{
+  position: fixed;
+  display: flex;
+  
+  width: 20%;
+  height: 10%;
+  top: 81.5%;
+  left: 1%;
+  transform: scale(0.88);
+  flex-direction: column;
+}
+
+#romance{
+  /* 24 role images */
+
+  font-family:'ZenDots';
+  font-style: normal;
+  font-weight: 510;
+  font-size: 32px;
+  line-height: 30px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.32);
+  margin-left: auto;
+  }
+  #tool2{
+   /* 浪漫的色彩工具 */
+  
+  /* width: 350px;
+  height: 45px; */
+margin-top: 0; 
+  font-family: 'Zen Loop';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45px;
+  /* identical to box height */
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  margin-left: auto;
+  
+  }
+
+
+/* .sord img:nth-child(2){
+    position: relative;
+    top: 150px;
+    left: -410px;
+} */
+
+.short{
+   
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    width: 126px;
+    height: 35px;
+    top: 130px;
+    right: 3%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    gap: 10px;
+
+    background: #CAFF01;
+    box-shadow: 0px 0px 0px #CAFF01;
+    border-radius: 5px;
+}
+.short p{
+
+    width: 120px;
+    height: 31px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.long{
+   
+    display: flex;
+    position: fixed;
+    width: 206px;
+    height: 35px;
+    top: 180px;
+    right: 3%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    gap: 10px;
+
+    background: #CAFF01;
+    box-shadow: 0px 0px 0px #CAFF01;
+    border-radius: 5px;
+}
+.long p{
+
+    width: 220px;
+    height: 31px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.mid{
+   
+    display: flex;
+    position: fixed;
+    width: 168px;
+    height: 35px;
+    top: 230px;
+    right: 3%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    gap: 10px;
+
+    background: #CAFF01;
+    box-shadow: 0px 0px 0px #CAFF01;
+    border-radius: 5px;
+}
+.mid p{
+
+    width: 220px;
+    height: 31px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 31px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+
+ #botton1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: fixed;
+    width: 125px;
+    height: 42px;
+    left: 2.8%;
+    top: 64%;
+
+    background: #f2f3ef;
+    box-shadow: 0px 0px 0px #CAFF01;
+    border-radius: 25px;
+}
+#botton1 p{
+    font-family: 'ArchivoBlack';
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 52px;
+
+    color: #000000;
+
+}
+#botton2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 10px;
+
+  position: fixed;
+  width: 160px;
+  height: 42px;
+  left: 11.2%;
+  top: 64%;
+
+  background: #CAFF01;
+  box-shadow: 0px 0px 0px #CAFF01;
+  border-radius: 25px;
+}
+#botton2 p{
+
+  font-family: 'ArchivoBlack';
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 10px;
+  color: #000000;
+
+}
+/*  new  */
+
+.second_page{
+    position: absolute;
+    width: 100%;
+    height: 4293px;
+    top: 926.79px;
+    background-color: #000;
+}
+
+.second_page nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 137px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.15);
+    top: -130px;
+}
+
+
+.second_page nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0.0000001px;
+    list-style: none;
+}
+
+.second_page ul li a {
+    display: flex;
+    width: 150px;
+    height: 33px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23.8px;
+    /* 119% */
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.second_page .unknow {
+    position: relative;
+    top: -130px;
+    width: 100%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    background: #E6E2E2;
+    border-right: 1px solid #E6E2E2;
+}
+
+.second_page .unknow ul {
+    display: flex;
+    position: relative;
+    left: -35px;
+    width: 27px;
+    height: 15px;
+    align-items: center;
+    flex-direction: row;
+    flex-shrink: 0;
+    list-style: none;
+}
+
+.second_page .unknow ul .f a {
+    display: flex;
+    position: relative;
+    width: 72px;
+    height: 16px;
+    left: -5px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #007BFF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    /* 170% */
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.second_page .unknow ul .s a {
+    display: flex;
+    position: relative;
+    width: 72px;
+    height: 16px;
+    left: -5px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #7F7F7F;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    /* 170% */
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+/* end of the top menue*/
+
+
+
+
+.gradient {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 100%;
+    height: 14.6%;
+    margin: 0;
+    background: linear-gradient(var(--gradient-angle), var(--gradient-colors));
+    /* background: linear-gradient(to right, var(--gradient-colors));  */
+    border: 3px solid #95FA45;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+.on-gradient{
+    display: flex  ;
+    height: 14.6%;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 1%;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #007BFF; */
+}
+.color-block {
+    position: relative ;
+    margin: 0 10px;
+
+}
+
+.color-square1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #93E52A;
+    margin-bottom: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* 白色透明的边框线 */
+} 
+  .color-square2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #1610cd;
+    margin-bottom: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* 白色透明的边框线 */
+}  
+.color-square3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #e30c21;
+    margin-bottom: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* 白色透明的边框线 */
+}
+
+.color-name {
+    text-align: center;
+    color: bisque;
+    font-size: 13px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    color:bisque;
+    cursor: pointer;
+    display: none;
+}
+
+.control-buttons {
+position: absolute;
+top: 9%;
+right: 4%;
+display: flex;
+
+/* align-items: center; */
+}
+#twobut{
+  margin-right: 100px;
+  /* top: -50%; */
+}
+.control-btn1 {
+  position: absolute;
+    margin: 20px;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(62, 62, 62, 0.46); /* 半透明的灰色背景 */
+    border-radius: 50%; /* 使其呈现为圆形 */
+}
+.control-btn0 {
+  position: absolute;
+  margin: 20px;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0); /* 透明背景 */
+  border-radius: 50%; /* 使其呈现为圆形 */
+  opacity: 0;
+  z-index: 2;
+}
+.control-btn2 {
+  position: relative;
+    margin: 20px;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(62, 62, 62, 0.46); /* 半透明的灰色背景 */
+    border-radius: 50%; /* 使其呈现为圆形 */
+}
+.but-txt{
+    position: relative;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.57);
+    top: -10px;
+    
+}
+.other-buttons{
+
+    position: absolute;
+    width: 90%;
+    height: 56px;
+    left: 5%;
+    top: 13.5%;
+    background: rgba(22, 22, 22, 0.48);
+    border-radius: 21px;
+    display: flex;
+    flex-direction: row;
+
+}
+.refresh{
+    width: 100px; 
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Poppins-Bold';
+    color: antiquewhite;
+    left: 100px;
+    top: 10px;
+    cursor: pointer;
+}
+.download{
+    width: 150px; 
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Poppins-Bold';
+    color: antiquewhite;
+    left: 45%;
+    top: 10px;
+    cursor: pointer;
+}
+.reverse{
+    width: 150px; 
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Poppins-Bold';
+    color: antiquewhite;
+    left: 85%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.circle {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 16.1px 4px rgba(104, 104, 104, 0.25);
+    position: absolute;
+    display: none;
+}
+
+.big-circle {
+    width: 288px;
+    height: 288px;
+    left: calc(50% - 144px);
+    top: calc(50% - 144px);
+    display: none;
+}
+
+.small-circle {
+    width: 84px;
+    height: 84px;
+    left: calc(62.3% - 42px);
+    top: calc(50% - 42px);
+    display: none;
+}
+
+
+/* end of gradient */
+
+.beauty{
+    position: relative;
+    top: 3%;
+    height: 10%;
+}
+.beauty img{
+    position: absolute;
+    width: 98%;
+    left: 1%;
+    top: 0px;
+    z-index: 3;
+    transform: scale(1);
+}
+
+.beauty .logo2{
+    position: relative;
+    transform: scale(1);
+    width: 8%;
+    top: 9%;
+    left: 47%;
+    z-index: 4;
+}
+
+.beauty .word{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 4;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.word p:nth-child(1){
+    /* “一抹颜色，一种浪漫"色彩魅力网站设计 */
+
+   
+    max-width: 100%;
+    margin: 0 ;
+    width: 400px;
+    height: 22px;
+    top: 0px;
+
+    font-family: 'ArchivoBlack';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #CAFF01;
+
+
+}
+.word p:nth-child(2){
+    /* COLOR BEYOND */
+
+  
+    max-width: 100%;
+    margin: 0 ;
+    width: 652px;
+    height: 104px;
+ 
+    top: 11px;
+    font-family: 'ArchivoBlack';
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 104px;
+
+    color: #FFFFFF;
+}
+.word p:nth-child(3){
+
+
+    max-width: 100%;
+    width: 1147px;
+    height: 118px;
+    font-family:'ArchivoBlack';
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #1D1D1D;
+}
+
+ .back{
+    position: relative;
+    z-index: 3;
+    top: 0.5%;
+    display: flex;
+    align-items: center;
+}
+.back-center{
+    position: relative;
+    transform: translate(12%,0%);
+    display: flex;
+    left: -8%;
+    width: 100%;
+    justify-content: center;
+
+}
+.back img{
+    transform: scale(0.65);
+    position: relative;
+    margin: 0 8% 0 0;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.Chinese ul {
+    position: relative;
+    list-style: none; /* 去除列表默认样式 */
+    padding: 0; /* 去除内边距 */
+    /* z-index: 3; */
+    left: 19%;
+    margin: 0;
+    top: -10px;
+    display: flex;
+    margin: 0;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+  }
+
+
+.Chinese ul li:nth-child(2) {
+  width: 250px;
+  height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ margin-left: 82px;
+}
+.Chinese ul li:nth-child(3) {
+  width: 250px;
+  height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ margin-left: 15px;
+}
+.Chinese ul li:nth-child(4) {
+  width: 250px;
+  height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ margin-left: 16px;
+}
+.Chinese li p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    color: white;
+    font-family: 'ArchivoBlack';
+}
+.Chinese li a {
+    font-family: 'ArchivoBlack';
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: #96F74A;
+}
+
+
+
+/* What will we provide */
+
+
+.W{
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    height: 104px;
+    left: 3%;
+    top: -1%;
+    z-index: 3;
+}
+
+.W p{
+    font-family: 'ArchivoBlack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 104px;
+
+    color: #FFFFFF;
+}
+
+/* 色环 */
+#sehuan {
+    position: relative;
+    /* background-color: rgb(23, 20, 17); */
+    width: 90%;
+    left: 5%;
+    height: 1000px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+}
+
+
+.group,
+.group * {
+box-sizing: border-box;
+}
+.group {
+height: auto;
+position: absolute;
+top: 20%;
+left: 25%;
+display: flex;
+justify-content: center; /* 水平居中 */
+align-items: center; 
+/* left: 100px; */
+overflow: visible;
+}
+
+.frame-26,
+.frame-26 * {
+box-sizing: border-box;
+}
+.frame-26 {
+background: #2f2f2f;
+border-radius: 1.5625rem;
+border-style: solid;
+border-color: #caff01;
+border-width: 0.0625rem;
+/* padding: 0.875rem 1.75rem 0.875rem 1.75rem; */
+display: flex;
+flex-direction: row;
+gap: 0.625rem;
+align-items: center;
+justify-content: center;
+height: 6rem;
+width: 450px;
+position: absolute;
+left: 10px;
+top: 12%;
+box-shadow: 0rem 0rem 0rem 0rem rgba(202, 255, 1, 1);
+overflow: hidden;
+}
+.frameword {
+color: #caff01;
+font-size: 1.6rem;
+font-weight: 200;
+position: relative;
+}
+
+.group2,
+.group2 * {
+box-sizing: border-box;
+}
+.group2 {
+height: auto;
+position: relative;
+overflow: visible;
+}
+
+.noun-color-range-200857-1,
+.noun-color-range-200857-1 * {
+box-sizing: border-box;
+}
+.noun-color-range-200857-1 {
+width: 10.3125rem;
+height: 12.875rem;
+position: relative;
+overflow: visible;
+}
+
+.greenvector,
+.greenvector * {
+box-sizing: border-box;
+}
+.greenvector {
+width: 8.9375rem;
+height: 9.125rem;
+position: absolute;
+left: 89%;
+top: 73%;
+overflow: visible;
+}
+
+#smallrectangles{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 67%;
+  top: 90%;
+}
+#smallrectangles div{
+  margin-left: 10px;
+}
+.sr1 {
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+.sr2 {
+  cursor: pointer;
+  background: #d147dc;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+.sr3 {
+  cursor: pointer;
+  background: #90d2ef;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+.sr4 {
+  cursor: pointer;
+  background: #FF900D;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+.sr5 {
+  cursor: pointer;
+  background: #00bf84;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+.sr6 {
+  cursor: pointer;
+  background: #00aecd;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+.sr7 {
+  cursor: pointer;
+  background: #ff0069;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+.sr8 {
+  cursor: pointer;
+  background: #4a33d9;
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-color: #caff01;
+  border-width: 0.0625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  box-shadow: 0.3125rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+.greencircle{
+  position: absolute;
+  width: 770px;
+  height: 770px;
+  top: 16.5%;
+  left: 22.2%;
+  border: 4px solid #33ed05; /* 设置圆环的颜色和宽度 */
+  border-radius: 50%; /* 使边框变成圆形 */
+  box-sizing: border-box; /* 确保边框宽度被包括在元素的总宽度内 */
+}
+
+.whiteline {
+  border: none; /* 移除默认的边框样式 */
+  border-top: 2px solid #fffdfd; /* 设置顶部边框为白色，调整宽度以改变横线厚度 */
+  width: 40%; /* 控制横线的长度，这里设置为屏幕宽度的50% */
+  position: absolute;
+  top: 3%;
+}
+.sehuanz {
+  background: #caff01;
+  border-radius: 1.5625rem;
+  padding: 0.875rem 1.75rem 0.875rem 1.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 2%;
+  box-shadow: 0rem 0rem 0rem 0rem rgba(202, 255, 1, 1);
+  overflow: hidden;
+}
+.sehuanz div {
+  color: #000000;
+  text-align: left;
+  font-family: "Anybody-Regular", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  position: relative;
+}
+
+
+/* 提色器 */
+#tise{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    top: 100%;
+    
+  }
+  .slideshow-container {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap; /* 允许 flex 元素自动换行 */
+  }
+  .analysed{
+    width: 630px; /* 相框宽度 */
+    height: 300px; /* 相框高度 */
+    background: linear-gradient(265.97deg, rgba(217, 226, 210, 0.56) 5.8%, rgba(180, 233, 136, 0.11) 154.54%, rgba(180, 233, 136, 0.11) 207.1%);
+    border-radius: 1.5625rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    margin: 0 auto; /* 水平居中 */
+  }
+  #analysed-container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  #container-tip{
+    /* 该图片当中总的颜色为： */
+    position: relative;
+    width: 220px;
+    height: 24px;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  #big-container{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    /* background-color: #070807; */
+    display: flex;
+    flex-direction: row;
+    float: left;
+  }
+  .big-rec{
+    margin-left: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    position: relative;
+    width: 101px;
+    height: 102px;
+    background: #FFFFFF;
+    border: 1px solid #CAFF01;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  #small-container{
+    margin-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* background-color: #ecd611; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* 允许 flex 元素自动换行 */
+  }
+  .small-rec{
+    margin-left: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background: #D147DC;
+    border: 1px solid #CAFF01;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px; 
+  }
+  .big-slideshow-image {
+    width: 630px; /* 相框宽度 */
+    height: 300px; /* 相框高度 */
+    /* border: 2px solid #ccc; 相框边框 */
+    border-radius: 1.5625rem;
+    overflow: hidden; /* 图片超出相框部分隐藏 */
+    margin: 0 auto; /* 水平居中 */
+  }
+
+ 
+  #smallFrame1{
+    width: 800px; /* 相框宽度 */
+    height: 250px; /* 相框高度 */
+    border-radius: 1.5625rem;
+    overflow: hidden; /* 图片超出相框部分隐藏 */
+    margin: 30px auto; /* 水平居中 */
+  }
+  #smallFrame2{
+    width: 460px; /* 相框宽度 */
+    height: 250px; /* 相框高度 */
+    border-radius: 1.5625rem;
+    overflow: hidden; /* 图片超出相框部分隐藏 */
+    margin: 30px auto; /* 水平居中 */
+  }
+
+  .big-slideshow-image img {
+    width: 100%; /* 图片宽度充满相框 */
+    height: 100%; /* 自动调整图片高度 */
+    display: block; /* 使图片居中显示 */
+  }
+
+  .small-slideshow-image img {
+    width: 100%; /* 图片宽度充满相框 */
+    height: 100%; /* 自动调整图片高度 */
+    display: block; /* 使图片居中显示 */
+  }
+
+  .dots-container {
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    left: 70%;
+  }
+
+  .dott {
+    display: inline-block;
+    height: 5px;
+    width: 50px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #00ee14;
+  }
+
+  .whiteline2 {
+          border: none; /* 移除默认的边框样式 */
+          border-top: 2px solid #ffffff; /* 设置顶部边框为白色，调整宽度以改变横线厚度 */
+          width: 40%; /* 控制横线的长度，这里设置为屏幕宽度的50% */
+          position: absolute;
+          top: 3.2%;
+        }
+        .tisez {
+          background: #caff01;
+          border-radius: 1.5625rem;
+          padding: 0.875rem 1.75rem 0.875rem 1.75rem;
+          display: flex;
+          flex-direction: row;
+          gap: 0.625rem;
+          align-items: center;
+          justify-content: center;
+          width: 10rem;
+          height: 2.7rem;
+          position: absolute;
+          top: 1.4%;
+          box-shadow: 0rem 0rem 0rem 0rem rgba(202, 255, 1, 1);
+          overflow: hidden;
+        }
+        .tisez div {
+          color: #000000;
+          text-align: left;
+          font-family: "Anybody-Regular", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          position: relative;
+        }
+
+        .tisetip {
+          background: #2f2f2f;
+          border-radius: 1.5625rem;
+          border-style: solid;
+          border-color: #caff01;
+          border-width: 0.0625rem;
+          padding: 0.875rem 1.75rem 0.875rem 1.75rem;
+          display: flex;
+          flex-direction: row;
+          gap: 0.625rem;
+          align-items: center;
+          justify-content: center;
+          height: 4rem;
+          position: absolute;
+          left: 71%;
+          top: 10%;
+          box-shadow: 0rem 0rem 0rem 0rem rgba(202, 255, 1, 1);
+          overflow: hidden;
+          cursor: pointer;
+        }
+        .tisetip div {
+          color: #caff01;
+          text-align: left;
+          font-family: "Inter-Regular", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 400;
+          position: relative;
+        }
+
+/* 浪漫色 */
+
+/* #cardb{
+    position: relative;
+    width: 100%;
+    height: 0;
+    z-index: 0;
+    margin-top: 10px;
+    /* background-color: #00ee14; 
+} */
+.botton3 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: relative;
+    width: 240px;
+    height: 55px;
+    left: 42%;
+    top: 1050px;
+    z-index: 3;
+
+    background: #CAFF01;
+    box-shadow: 0px 0px 0px #CAFF01;
+    border-radius: 25px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.botton3 p{
+    width: 106px;
+    height: 29px;
+
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #000000;
+
+}
+
+.line3{
+    position: relative;
+    width: 175px;
+    height: 46px;
+    left: 43%;
+    top: 1000px;
+    z-index: 3;
+}
+
+.line3 img:nth-child(1){
+    position: absolute;
+    left: -210px;
+    top: 21px;
+}
+
+.line3 img:nth-child(2){
+    position: absolute;
+    left: 210px;
+    top: 22px;
+}
+
+.rec{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* z-index: 3; */
+    transform: scale(0.7);
+    top: 1000px;
+    left: -5%;
+}
+
+
+.rec img:nth-child(2){
+    margin-left: 50px;
+} 
+.artword{
+    position: relative;
+    top: 520px;
+    left: -4%;
+    transform: scale(0.7);
+}
+
+.artword img:nth-child(2){
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+.manyword{
+    /* 向各行各业色彩爱好者和研究者给予微薄展示 挖掘个性化色彩元素，为之附上生命价值， 24个浪漫色代表将会陪你同在，一起进步 给予艺术审美能力蒸蒸提升! */
+
+    position: relative;
+    width: 293px;
+    height: 158px;
+    left: 12%;
+    top: 550px;
+    z-index: 4;
+
+    font-family: 'Anybody';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+.colon{
+    position: relative;
+    z-index: 4;
+    top: 500px;
+    left: -5%;
+    transform: scale(0.7);
+}
+
+.colon img:nth-child(1){
+    position: absolute;
+    top: 120px;
+    left: 330px;
+
+}
+.colon img:nth-child(2){
+    position: absolute;
+    left: 600px;
+    top: -300px;
+    
+}
+.colon img:nth-child(3){
+    position: absolute;
+    left: 585px;
+    top: -270px;
+}
+.com{
+    position: relative;
+    left: 780px;
+    /* top: 300px; */
+}
+
+  .comp img {
+  position: relative;
+  z-index: 4;
+      top: 200px;
+    left: 612px;
+width:680px;
+height:500px;
+border-radius: 3%;
+  transform: scale(0.6);
+  display: none; /* 初始时隐藏所有图片 */
+}
+
+.comp img.active {
+  display: block; /* 仅显示当前图片 */
+}
+
+  
+.arrow1{
+    position: relative;
+    z-index: 4;
+    left: 640px;
+    top: -60px;
+}
+.arrow1 img:nth-child(2){
+  cursor: pointer;
+  margin-left: 550px;
+}
+.arrow1 img:nth-child(1){
+  cursor: pointer;
+}
+/*下面灰灰的*/
+.mess{
+    position: relative;
+    width: 100vw;
+    height: 308px;
+    left: 0px;
+    top: 80px;
+    background: #39393b;
+
+}
+
+
+.logolast {
+    /* color beyond */
+
+    position: absolute;
+    width: 233px;
+    height: 40px;
+    left: 323px;
+    top: 3\12px;
+}
+
+.logolast p{
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    /* identical to box height */
+
+    color: #666667;
+}
+
+.logoLast img{
+    position: absolute;
+    transform: scale(0.8);
+    left: 210px;
+    top: 20px;
+}
+
+.team{
+    /* Group 142 */
+
+    position: absolute;
+    width: 330px;
+    height: 95px;
+    left: 220px;
+    top: 100px;
+}
+
+.team a{
+    font-family: 'ArchivoBlack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.address{
+    /* Group 142 */
+
+    position: absolute;
+    width: 330px;
+    height: 95px;
+    left: 220px;
+    top: 136px;
+}
+
+.address p{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+}
+
+.longline{
+
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 215px;
+    border: 0.4px solid #FFFFFF;
+}
+
+.bianhao{
+    /*  */
+
+    position: absolute;
+    width: 756px;
+    height: 21px;
+    left: 220px;
+    top: 230px;
+
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.smalll{
+    position: absolute;
+    right: 180px;
+    top: 250px;
+    display: flex;
+    gap: 20px;
+}
+
+.tooltip1 {
+  position: absolute;
+  display: none;
+  width: 173px;
+  height: 205px;
+top: -200px;
+left: -73px;
+}
+
+
+.smalll1:hover + .tooltip1 {
+  display: block;
+}
+.tooltip2 {
+  position: absolute;
+  display: none;
+  width: 173px;
+  height: 205px;
+top: -200px;
+left: -20px;
+}
+
+.smalll2:hover + .tooltip2 {
+  display: block;
+}
