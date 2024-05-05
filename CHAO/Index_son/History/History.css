@@ -1,0 +1,391 @@
+img{
+    border-radius: 15px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Img/background.jpg);
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* nav */
+/* Head */
+.page_head{
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(237, 233, 222, 90%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 35);
+    background-image: url("Img/.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#page_head_h1{
+    color: rgba(254,253,243, 80%);
+    font-size: 120px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    border-bottom: 3px solid rgba(255, 255, 255, 75%);
+}
+
+#page_head_p{
+    color: rgba(186,182,133,100);
+    font-size: 24px;
+    position: absolute;
+    left: 51%;
+    top: 60%;
+}
+
+.nav .nav_p{
+    transition: 0.4s;
+    margin-top: 0px;
+    margin-left: 60px;
+    color: rgba(176, 173, 156, 100%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 华文楷体;
+}
+
+/* 导航 */
+.w{
+    width: 100%;
+    margin: auto;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+}
+
+.nav ul li img{
+    margin-top: -10px;
+    float: left;
+}
+
+.header{
+    height: 50px;
+    margin: auto;
+}
+
+.logo{
+    float: left;
+    margin-left: 80px;
+    margin-top: 5px;
+    width: 198px;
+    height: 65px;
+}
+
+.nav{
+    float: left;
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 60%;
+}
+
+.nav ul li{
+    float: left;
+    margin: 0 6%;
+}
+
+.nav ul li a{
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    color: black;
+    transition: 0.2s;
+}
+
+.nav ul li a:hover .nav_p{
+    scale: 1.1;
+
+
+}
+
+.search{
+    cursor: pointer;
+    position: relative;
+    right: 8%;
+    float: left;
+    width: 320px;
+    height: 55px;
+    background-image: url(../../TogetherImg/input.png);
+    background-repeat: no-repeat;
+    background-size: 100% 105%; 
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 6%;
+}
+
+.search input{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 230px;
+    height: 40px;
+    font-size: 14px;
+    color: aliceblue;
+    background-color:transparent;
+    border:0;
+}
+.search input:focus{
+    font-size: 0px;
+}
+.search button{
+    float: left;
+    width: 45px;
+    height: 42px;
+    border: 1px;
+    background: url(Img/search_icon.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Main */
+.maincontain p{
+    font-family: 华文楷体 !important;
+    font-size: 24px !important;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: rgb(136, 109, 19);
+}
+.maincontain h1{
+    font-family: 华文楷体 !important;
+    font-size: 42px !important;
+    letter-spacing: 1px;
+    color: rgb(136, 109, 19);
+}
+/* Button */
+.maincontain{
+    position: relative;
+    left: 200px;
+    top: 150px;
+    background-image: url(Img/maintain_back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  110% 105%;
+    width: 1500px;
+    height: 600px;
+    overflow: hidden;
+}
+.maincontain div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.TopButton{
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    width: 1500px;
+    height: 150px;
+}
+.TopButton img{
+    padding: 0 25px;
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+#Origin_Button{
+    padding-left: 0px;
+}
+.TopButton img:hover{
+    scale: 1.05;
+    transition: 0.2s;
+}
+.TopButton img:active{
+    scale: 1.00;
+    transition: 0.3s;
+}
+/* LittleButton */
+.LittleButton{
+    position: absolute;
+    left:18px;
+    top: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 800px;
+    overflow: hidden;
+    visibility:hidden;
+}
+.LittleButton img{
+    position: absolute;
+    left: -180px;
+    top: 200px;
+    width: 180px;
+    height: 185px;
+    transition: 0.5s;
+}
+#Allusion_1_Button{
+    top: 0px;
+}
+#Allusion_2_Button{
+    top: 100px;
+}
+#Allusion_4_Button{
+    top: 300px;
+}
+#Allusion_5_Button{
+    top: 400px;
+}
+#Allusion_1_Button:hover,#Allusion_2_Button:hover,#Allusion_3_Button:hover,#Allusion_4_Button:hover,#Allusion_5_Button:hover{
+    transform: translateX(80px);
+    cursor: pointer;    
+}
+.LittleButton img:active{
+    scale: 1.03;
+    transition: 0.2s;
+}
+/* CustomButton */
+.CustomButton{
+    position: absolute;
+    left:18px;
+    top: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 800px;
+    overflow: hidden;
+    visibility:hidden;
+}
+.CustomButton img{
+    position: absolute;
+    left: -180px;
+    top: 200px;
+    width: 180px;
+    height: 185px;
+    transition: 0.5s;
+}
+#CustomButton_1{
+    top: 0px;
+}
+#CustomButton_2{
+    top: 100px;
+}
+#CustomButton_3{
+    top: 200px;
+}
+#CustomButton_4{
+    top: 300px;
+}
+#CustomButton_1:hover,#CustomButton_2:hover,#CustomButton_3:hover,#CustomButton_4:hover{
+    transform: translateX(80px);
+    cursor: pointer;    
+}
+
+/*Contain*/
+
+#Origin{
+    visibility: visible;
+}
+#Allusion{
+    visibility: hidden;
+}
+#Custom{
+    visibility: hidden;
+}
+#Allusion_1{
+    visibility: hidden;
+}
+#Allusion_2{
+    visibility: hidden;
+}
+#Allusion_3{
+    visibility: hidden;
+}
+#Allusion_4{
+    visibility: hidden;
+}
+#Allusion_5{
+    visibility: hidden;
+}
+
+
+/* Allin_css */
+#Origin img{
+    position: absolute;
+    left: 180px;
+    top: 70px;
+}
+.Origin_text{
+    overflow: hidden;
+    width: 700px !important;
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: 650px;
+}
+.Origin_text h1{
+    font-size: 36px;
+}
+.Origin_text p{
+    font-size: 20px;
+}
+#Allusion img,#Allusion_1 img,#Allusion_2 img,#Allusion_3 img,#Allusion_4 img,#Allusion_5 img{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+.Allusion_text,.Allusion_1_text,.Allusion_2_text,.Allusion_3_text,.Allusion_4_text,.Allusion_5_text{
+    overflow: hidden;
+    width: 700px !important;
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: 650px;
+}
+.Allusion_text h1,.Allusion_1_text h1,.Allusion_2_text h1,.Allusion_3_text h1,.Allusion_4_text h1,.Allusion_5_text h1{
+    font-size: 36px;
+    /* font-family: ; */
+}
+.Allusion_text p,.Allusion_1_text p,.Allusion_2_text p,.Allusion_3_text p,.Allusion_4_text p,.Allusion_5_text p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    /* font-family: ; */
+}
+
+#Custom_1,#Custom_2,#Custom_3,#Custom_4{
+    visibility: hidden;
+}
+#Custom_1 img,#Custom_2 img,#Custom_3 img,#Custom_4 img{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+.Custom_text{
+    overflow: hidden;
+    width: 700px !important;
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: 650px;
+}
+.Custom_text h1{
+    font-size: 36px;
+}
+.Custom_text p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#His{
+    color:rgba(118, 124, 82, 0.873);
+}
+

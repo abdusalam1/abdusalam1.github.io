@@ -1,0 +1,54 @@
+body{
+    background-image: url(img/background.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.button{
+    position: absolute;
+    left: 570px;
+    top: 400px;
+}
+.logo{
+    position: absolute;
+    left: 720px;
+    top: 60px;
+}
+.logo img{
+    width: 400px;
+}
+
+.button img{
+    width: auto;
+    height: 230px;
+}
+.thePic{
+    position: absolute;
+    left: 680px;
+    top: 300px;
+    width: 800px;
+    overflow: hidden;
+}
+.thePic img{
+    float: left;
+    width: 150px;
+    transform: 0.3s;
+}
+.thePic p{
+    float: left;
+    color: rgb(140, 138, 138);
+    font-size: 60px;
+    margin-top: 60px;
+    width: 400px;
+}
+#Left:hover{
+    scale: 1.05;
+}
+#Right:hover{
+    scale: 1.05;
+}
+#Left,#Right{
+    transition: 0.2s;
+}

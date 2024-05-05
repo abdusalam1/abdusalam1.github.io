@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 晨光大字;
+    src: url(晨光大字.TTF);
+}
+@font-face {
+    font-family: 德彪钢笔行书字体;
+    src: url(德彪钢笔行书字体.OTF);
+}
+@font-face {
+    font-family: 王汉宗中行书繁;
+    src: url(王汉宗中行书繁.ttf);
+}
+@font-face {
+    font-family: 禹卫书法行书繁体;
+    src: url(禹卫书法行书繁体.ttf);
+}
+@font-face {
+    font-family: 华文楷体;
+    src: url(华文楷体.ttf);
+}
