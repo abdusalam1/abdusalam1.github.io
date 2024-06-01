@@ -173,14 +173,15 @@ document.addEventListener('DOMContentLoaded', function() {
               // 将颜色信息保存到本地存储
                 localStorage.setItem('colors', JSON.stringify(response.colors));
                 // document.getElementById('responseMessage').innerText = JSON.stringify(response.colors);
-                console.log('success');  
+                // console.log('success');  
+                // 刷新页面
+            location.reload();
             },  
             error: function(error) {  
                 console.log('Error:', error);  
             }  
         });  
-        return false; // 阻止按钮默认行为
-        // location.reload();
+      //刷新页面
     }
 
 
