@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25-4-7</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        
+        .text-box {
+            width: 100%;
+            height: 150px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            resize: none;
+        }
+        
+        .copy-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .date-display {
+            margin-top: auto;
+            padding: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <textarea class="text-box" readonly>https://fn1.476579.xyz/api/v1/client/subscribe?token=b1634e75e1af83b54ae09307b43b8b6a</textarea>
+        <button class="copy-btn" onclick="copyText()">复制文本</button>
+    </div>
+    
+    <div class="date-display" id="dateDisplay"></div>
+    
+    <script>
+        // 显示当前日期
+        function updateDate() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                weekday: 'long' 
+            };
+            document.getElementById('dateDisplay').textContent = now.toLocaleDateString('zh-CN', options);
+        }
+        
+        // 复制文本函数
+        function copyText() {
+            const textBox = document.querySelector('.text-box');
+            textBox.select();
+            document.execCommand('copy');
+            
+            // 改变按钮文本提示用户
+            const btn = document.querySelector('.copy-btn');
+            btn.textContent = '已复制!';
+            
+            // 2秒后恢复原状
+            setTimeout(() => {
+                btn.textContent = '复制文本';
+            }, 2000);
+        }
+        
+        // 页面加载时更新日期
+        window.onload = updateDate;
+    </script>
+</body>
+</html>
